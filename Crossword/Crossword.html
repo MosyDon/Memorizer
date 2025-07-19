@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crossword</title>
+<link rel="stylesheet" href="Crossword.css">
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body onload="initializeScreen()">
+	<nav class="navbar">
+		<div class="navbar__container">
+		  <a href="E:\Computer science\Sem8 -June-July (2022)\FYP4202\Program\Memorizer\default.html" id="navbar__logo"><i class="fas fa-dice"></i>Memorizer</a>
+		  
+		  <ul class="navbar__menu">
+			<li class="navbar__item">
+			  <a href="E:\Computer science\Sem8 -June-July (2022)\FYP4202\Program\Memorizer\default.html" class="navbar__links">Home</a>
+			</li>
+			
+			
+		  </ul>
+		</div>
+	  </nav>
+	  <div class="background">
+<div id="leftBox"> 
+	<!--the crossword box-->
+<table id="puzzle">
+
+</table>
+</div>
+<!--The 4 buttons-->
+<div id="rightBox">
+<table>
+	<tr><td><input class="butt"  type="submit" value="Clear All" onclick="clearAllClicked()"></td>
+	<td><input class="butt"  type="submit" value="Check" onclick="checkClicked()"></td>
+	<td><input class="butt"  type="submit" value="Solve" onclick="solveClicked()"></td>
+	<td><input class="butt"  type="submit" value="Clue" onclick="clueClicked()"></td></tr>
+</table>
+</div>
+<!-- The hints-->
+<table id="hintsTable">
+		<tr>
+			<td><strong>Across:</strong></td><td><strong>Down:</strong></td>
+		</tr>
+		<tr>
+			<td>1)Cow with curved horns</td><td>1)Member of the pig family</td>
+		</tr>
+		<tr>
+			<td>3)Meerkat that eats snakes</td><td>2)Has spots called rosettes</td>
+		</tr>
+		<tr>
+			<td>7)Carnivore that makes laughing sounds</td><td>4)Striped horse</td>
+		</tr>
+		<tr>
+			<td>8)Very long necked animal</td><td>5)Monkey name that ryhmes with baloon</td>
+		</tr>
+		<tr>
+			<td>10)World's fastest bird</td><td>6)World's fastest land animal</td>
+		</tr>
+		<tr>
+			<td>11)Has a thick armor-like skin</td><td>9)King of the jungle</td>
+		</tr>
+</table>
+</div>
+</div>
+<script src="Crossword.js"></script>
+</body>
+</html>
